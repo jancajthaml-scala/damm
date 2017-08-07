@@ -15,7 +15,7 @@ object RegressionResources extends Bench.OfflineReport {
         exec.maxWarmupRuns -> 5,
         exec.benchRuns -> 5,
         exec.independentSamples -> 1
-      ) in { sz => { (0 to sz).foreach { x => { damm_checksum("001230147647009683210024") } } } }
+      ) in { sz => { (0 to sz).foreach { x => { damm_digit("001230147647009683210024") } } } }
     }
   }
 }
@@ -31,8 +31,7 @@ object RegressionPerformance extends Bench.OfflineReport {
         exec.independentSamples -> 1,
         exec.outliers.covMultiplier -> 1.5,
         exec.outliers.suspectPercent -> 40
-      ) in { sz => { (0 to sz).foreach { x => { damm_checksum("001230147647009683210024") } } } }
+      ) in { sz => { (0 to sz).foreach { x => { damm_digit("001230147647009683210024") } } } }
     }
   }
-
 }
